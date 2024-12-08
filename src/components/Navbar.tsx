@@ -115,9 +115,10 @@ const Navbar = () => {
             <li>
               <Link href="/About">About</Link>
             </li>
+            <Link href="/Contact">
             <span className="text-[#636270] ml-[29rem]">
               Contact:<span className="text-[#272343]"> (808) 555-0111</span>
-            </span>
+            </span></Link>
           </ul>
         </nav>
         {/* <div>
