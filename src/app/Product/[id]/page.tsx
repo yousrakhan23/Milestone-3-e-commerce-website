@@ -4,18 +4,18 @@ import Image from "next/image";
 import NewsLetter from "@/components/NewsLetter";
 
 const products = [
-  { id: 1, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20", badge: "New" },
-  { id: 2, image: "/path-to-image2.jpg", title: "Library Stool Chair", price: "$20", badge: "Sale" },
-  { id: 3, image: "/path-to-image3.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 4, image: "/path-to-image4.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 5, image: "/path-to-image5.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 6, image: "/path-to-image6.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 7, image: "/path-to-image7.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 8, image: "/path-to-image8.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 9, image: "/path-to-image9.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 10, image: "/path-to-image10.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 11, image: "/path-to-image11.jpg", title: "Library Stool Chair", price: "$20" },
-  { id: 12, image: "/path-to-image12.jpg", title: "Library Stool Chair", price: "$20" },
+  { id: 1, image: "../../public/images/fp_1.png", title: "Library Stool Chair", price: "$20", badge: "New" },
+  { id: 2, image: "/images/fp_1.png", title: "Library Stool Chair", price: "$20", badge: "Sale" },
+  { id: 3, image:"/images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 4, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 5, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 6, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 7, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 8, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 9, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 10, image:"../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 11, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
+  { id: 12, image: "../../images/fp_1.png", title: "Library Stool Chair", price: "$20" },
 
 ];
 
