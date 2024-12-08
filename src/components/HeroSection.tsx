@@ -10,6 +10,10 @@ import hero_logo4 from "@/public/images/heroLogo4.png";
 import hero_logo5 from "@/public/images/heroLogo5.png";
 import hero_logo6 from "@/public/images/heroLogo6.png";
 import hero_logo7 from "@/public/images/heroLogo7.png";
+import FeaturedProducts from "./FeaturedProducts";
+import TopCategories from "./TopCategories";
+import ExploreNewProducts from "./ExploreNewProducts";
+import OurProducts from "./OurProducts";
 
 const fontInter400 = Inter({ weight: "400", subsets: ["latin"] });
 const fontInter700 = Inter({ weight: "700", subsets: ["latin"] });
@@ -99,6 +103,12 @@ const HeroSection = () => {
             className=" sm:h-19"
           />
         </div>
+      </div>
+      <div>
+        <FeaturedProducts />
+        <TopCategories /> 
+        <ExploreNewProducts />
+        <OurProducts />
       </div>
     </div>
   );
