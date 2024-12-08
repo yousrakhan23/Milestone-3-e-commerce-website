@@ -3,19 +3,20 @@
 import React from "react";
 import Link from "next/link";
 import { Inter } from "next/font/google";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const fontInter500 = Inter({ weight: "500", subsets: ["latin"] });
 const Navbar = () => {
   return (
     <div>
-      <div className="bg-[#F0F2F3] py-9">
+      <div className="bg-[#F0F2F3] py-9 ">
         <svg
           width="166"
           height="40"
           viewBox="0 0 166 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="mx-[19rem]"
+          className="mx-auto sm:mx-[10rem] md:mx-[15rem] lg:mx-[19rem] "
         >
           <g clip-path="url(#clip0_1_889)">
             <path
@@ -100,25 +101,58 @@ const Navbar = () => {
             className={`${fontInter500.className} flex items-center gap-8 ml-[19rem] mt-7 text-[#636270] hover:text-[#007580]`}
           >
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href={""}>Shop</Link>
+              <Link href="/Shop">Shop</Link>
             </li>
             <li>
-              <Link href={""}>Product</Link>
+              <Link href="/Product">Product</Link>
             </li>
             <li>
-              <Link href={""}>Pages</Link>
+              <Link href="/Pages">Pages</Link>
             </li>
             <li>
-              <Link href={""}>About</Link>
+              <Link href="/About">About</Link>
             </li>
             <span className="text-[#636270] ml-[29rem]">
-              Contact:<span className="text-[#272343]">(808) 555-0111</span>{" "}
+              Contact:<span className="text-[#272343]"> (808) 555-0111</span>
             </span>
           </ul>
         </nav>
+        {/* <div>
+        <Sheet>
+        <SheetTrigger>
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#000"
+                className="block lg:hidden"
+              >
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg>
+            </SheetTrigger>
+            <SheetContent className="w-screen bg-slate-400 h-screen flex flex-col justify-center items-center">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/Shop">Shop</Link>
+            </li>
+            <li>
+              <Link href="/Product">Product</Link>
+            </li>
+            <li>
+              <Link href="/Pages">Pages</Link>
+            </li>
+            <li>
+              <Link href="/About">About</Link>
+            </li>
+            </SheetContent>
+            </Sheet>
+        </div> */}
       </div>
     </div>
   );
