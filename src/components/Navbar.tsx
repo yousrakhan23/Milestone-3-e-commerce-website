@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Inter } from "next/font/google";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+// import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const fontInter500 = Inter({ weight: "500", subsets: ["latin"] });
 const Navbar = () => {
