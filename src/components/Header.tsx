@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { Inter } from "next/font/google";
+
 
 const fontInter400 = Inter({ weight: "400", subsets: ["latin"] });
 
@@ -60,11 +62,13 @@ const Header = () => {
             </div>
 
             {/* FAQs */}
+            <Link href="/Faqs" >
             <span
-              className={`${fontInter400.className} text-[#FFFFFF] text-[12px] sm:text-[11px] md:text-[13px]`}
+              className={`${fontInter400.className} text-[#FFFFFF] text-[12px] sm:text-[11px] md:text-[13px] cursor-pointer`}
             >
               Faqs
             </span>
+            </Link>
 
             {/* Need Help */}
             <div className="flex items-center text-[#FFFFFF] text-[12px] sm:text-[11px] md:text-[13px]">
