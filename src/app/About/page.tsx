@@ -27,7 +27,7 @@ const About = () => {
             At Comforty, we believe that the right chair can transform your
             space and elevate your comfort. Specializing in ergonomic design,
             premium materials, and modern aesthetics, we craft chairs that
-            seamlessly blend style with functionality.{" "}
+            seamlessly blend style with functionality.
           </p>
           <button className="w-[179px] h-[56px] text-[#FFFFFF] text-[16px] bg-[#029FAE]  ml-[4rem] mt-[13rem]">
             View collection

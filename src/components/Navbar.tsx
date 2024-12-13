@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Inter } from "next/font/google";
-// import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const fontInter500 = Inter({ weight: "500", subsets: ["latin"] });
 const Navbar = () => {
@@ -98,22 +98,25 @@ const Navbar = () => {
       <div>
         <nav className="h-[84px] ">
           <ul
-            className={`${fontInter500.className} flex items-center gap-8 ml-[19rem] mt-7 text-[#636270] hover:text-[#007580]`}
+            className={`${fontInter500.className} flex items-center gap-8 ml-[19rem] mt-7 text-[#636270] `}
           >
-            <li>
+            <li className="hover:text-[#007580]">
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className="hover:text-[#007580]">
               <Link href="/Shop">Shop</Link>
             </li>
-            <li>
+            <li className="hover:text-[#007580]">
               <Link href="/Product">Product</Link>
             </li>
-            <li>
+            <li className="hover:text-[#007580]">
               <Link href="/Pages">Pages</Link>
             </li>
-            <li>
+            <li className="hover:text-[#007580]">
               <Link href="/About">About</Link>
+            </li>
+            <li className="hover:text-[#007580]">
+              <Link href="/Contact">Contact</Link>
             </li>
             <Link href="/Contact">
             <span className="text-[#636270] ml-[29rem]">
@@ -121,7 +124,7 @@ const Navbar = () => {
             </span></Link>
           </ul>
         </nav>
-        {/* <div>
+        <div>
         <Sheet>
         <SheetTrigger>
         <svg
@@ -135,25 +138,28 @@ const Navbar = () => {
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
               </svg>
             </SheetTrigger>
-            <SheetContent className="w-screen bg-slate-400 h-screen flex flex-col justify-center items-center">
-            <li>
+            <SheetContent className="w-screen bg-[#766ac5] h-screen flex flex-col justify-center items-center">
+            <li className="text-[#FFFFFF] hover:text-[#272343]">
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className="text-[#FFFFFF] hover:text-[#272343]">
               <Link href="/Shop">Shop</Link>
             </li>
-            <li>
+            <li className="text-[#FFFFFF] hover:text-[#272343]">
               <Link href="/Product">Product</Link>
             </li>
-            <li>
+            <li className="text-[#FFFFFF] hover:text-[#272343]">
               <Link href="/Pages">Pages</Link>
             </li>
-            <li>
+            <li className="text-[#FFFFFF] hover:text-[#272343]">
               <Link href="/About">About</Link>
+            </li>
+            <li className="text-[#FFFFFF] hover:text-[#272343]">
+              <Link href="/Contact">Contact</Link>
             </li>
             </SheetContent>
             </Sheet>
-        </div> */}
+        </div>
       </div>
     </div>
   );
