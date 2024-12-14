@@ -2,7 +2,13 @@
 import React from "react";
 import Link from "next/link";
 import { Inter } from "next/font/google";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
 
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const fontInter400 = Inter({ weight: "400", subsets: ["latin"] });
 
@@ -41,7 +47,17 @@ const Header = () => {
           <div className="flex items-center space-x-4 sm:space-x-2">
             {/* Language Dropdown */}
             <div className="flex items-center text-[#FFFFFF] text-[12px] sm:text-[11px] md:text-[14px]">
-              <span className="mr-[2px]">Eng</span>
+              {/* <span className="mr-[2px]">Eng</span> */}
+              <DropdownMenu>
+                <DropdownMenuTrigger className="mr-[2px]">Eng</DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuItem>French</DropdownMenuItem>
+                  <DropdownMenuItem>Spanish</DropdownMenuItem>
+                  <DropdownMenuItem>Chineese</DropdownMenuItem>
+                  <DropdownMenuItem>Arabic</DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+
               <span className="self-start">
                 <svg
                   width="9"
@@ -62,12 +78,12 @@ const Header = () => {
             </div>
 
             {/* FAQs */}
-            <Link href="/Faqs" >
-            <span
-              className={`${fontInter400.className} text-[#FFFFFF] text-[12px] sm:text-[11px] md:text-[13px] cursor-pointer`}
-            >
-              Faqs
-            </span>
+            <Link href="/Faqs">
+              <span
+                className={`${fontInter400.className} text-[#FFFFFF] text-[12px] sm:text-[11px] md:text-[13px] cursor-pointer`}
+              >
+                Faqs
+              </span>
             </Link>
 
             {/* Need Help */}

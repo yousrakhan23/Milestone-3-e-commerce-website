@@ -21,27 +21,38 @@ const fontInter700 = Inter({ weight: "700", subsets: ["latin"] });
 const HeroSection = () => {
   return (
     <div>
-      <div className=" h-[550px] bg-[#F0F2F3] justify-center">
-        <div className=" top-[229px] left-[70px]">
+      <div className="h-[550px] bg-[#F0F2F3] flex flex-col lg:flex-row items-center lg:justify-center">
+        <div className="text-center lg:text-left lg:top-[229px] lg:left-[70px]">
           <p
-            className={`${fontInter400} uppercase text-[#272343] text-[14px] ml-[25rem] `}
+            className={`${fontInter400} uppercase text-[#272343] pt-4 text-[14px] lg:pt-9 lg:ml-[25rem]`}
           >
-            Welcome to chairy
+            Welcome to Chairy
           </p>
           <h1
-            className={`${fontInter700.className} text-[#272343] text-[60px] w-[557px] h-[198px] top-[267px] left-[70px] mx-[24rem]`}
+            className={`${fontInter700.className} text-[#272343] text-[32px] sm:text-[60px] w-full lg:w-[557px] lg:h-[198px] lg:top-[267px] lg:left-[70px] lg:mx-[24rem]`}
           >
             Best Furniture Collection For Your Interior.
           </h1>
-          <div className="w-[171px] h-[52px] pt-[6rem] ml-[24rem]">
+          <div className="w-[171px] h-[52px] pt-4 mx-auto lg:pt-[6rem] lg:ml-[24rem]">
             <button
-              className={`${fontInter400.className} text-[#FFFFFF] bg-[#029FAE] w-[171px] h-[52px] rounded-[8px] `}
+              className={`${fontInter400.className} text-[#FFFFFF] bg-[#029FAE] w-[171px] h-[52px] rounded-[8px]`}
             >
               Shop Now {"->"}
             </button>
           </div>
         </div>
-        <div>
+        <div className="mt-8 lg:mt-0 lg:absolute lg:top-[290px] lg:right-0 lg:left-[1100px]">
+  <Image
+    src={hero_section}
+    alt="hero_section"
+    width={360}
+    height={574}
+    className="mx-auto lg:mx-0 scale-50 sm:scale-75 md:scale-100"
+  />
+</div>
+
+
+        {/* <div>
           <Image
             src={hero_section}
             alt="hero_section"
@@ -49,8 +60,9 @@ const HeroSection = () => {
             height={574}
             className="absolute top-[290px] right-0 left-[1100px]"
           />
-        </div>
+        </div> */}
       </div>
+      {/* logo images */}
       <div className="bg-white py-6 px-4">
         <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between gap-4 sm:gap-6 lg:gap-8">
           <Image
@@ -106,7 +118,7 @@ const HeroSection = () => {
       </div>
       <div>
         <FeaturedProducts />
-        <TopCategories /> 
+        <TopCategories />
         <ExploreNewProducts />
         <OurProducts />
       </div>
