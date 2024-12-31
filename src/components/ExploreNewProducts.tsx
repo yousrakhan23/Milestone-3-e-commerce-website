@@ -19,18 +19,18 @@ const ExploreNewProducts = () => {
         </h1>
 
         {/* Grid Container */}
+        <div className="absolute right-16 lg:left-[10px] top-[90%] -translate-y-[50%] rotate-[-90deg] text-sm lg:text-lg font-bold uppercase tracking-widest text-gray-700 whitespace-nowrap">Explore new and popular styles</div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-  {/* Slightly Smaller Large Image */}
-  <div className="lg:col-span-2 lg:pr-4">
-    <Image
-      src={category1}
-      alt="Large Featured Image"
-      width={500}  
-      height={50}
-      className="w-full h-auto rounded-lg"
-    />
-  </div>
-
+          {/* Slightly Smaller Large Image */}
+          <div className="col-span-2 lg:col-span-1">
+            <Image
+              src={category1}
+              alt="Large Featured Image"
+              width={500}
+              height={50}
+              className=" h-auto rounded-lg"
+            />
+          </div>
 
           {/* Small Images Grid */}
           <div className="grid grid-cols-2 gap-4">
